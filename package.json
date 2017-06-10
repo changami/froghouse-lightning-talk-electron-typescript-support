@@ -1,0 +1,28 @@
+{
+  "name": "froghouse-lightning-talk-electron-typescript-support",
+  "version": "1.0.0",
+  "description": "Frog Lightning Talk on June 10th, 2017",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run transpile && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changami/froghouse-lightning-talk-electron-typescript-support.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "chan_gami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/changami/froghouse-lightning-talk-electron-typescript-support/issues"
+  },
+  "homepage": "https://github.com/changami/froghouse-lightning-talk-electron-typescript-support#readme",
+  "dependencies": {
+    "electron": "1.6.10",
+    "typescript": "^2.3.4"
+  }
+}
