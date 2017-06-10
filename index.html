@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>electron_typescript</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/night.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <style type="text/css">
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      text-transform: none;
+    }
+  </style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+    <section data-markdown data-background="#2f3241" data-background-transition="none">
+      <script type="text/template">
+        ## <span style="color: #74b1be">TypeScript support in Electron</span>
+
+        ### <span style="color:#EE5757">@chan_gami</span>
+      </script>
+    </section>
+    <section data-markdown data-background="#FFFFFF" data-background-transition="none">
+      <script type="text/template">
+        <p style="color: #3a585f">2017年6月1日、</p>
+        <p style="color: #3a585f">ElectronのTypeScriptSupportについての発表がありました。</p>
+        ![Announcing TypeScript Support](announcing_typeScript_support.png)
+        <p style="color: #3a585f;font-size: 24px"><a href="https://electron.atom.io/blog/2017/06/01/typescript" target="_blank">https://electron.atom.io/blog/2017/06/01/typescript</a></p>
+      </script>
+    </section>
+    <section data-markdown data-background="#FFFFFF" data-background-transition="none">
+      <script type="text/template">
+        ### <p style="color: #3a585f">TypeScriptとは？</p>
+
+        <blockquote cite="https://ja.wikipedia.org/wiki/TypeScript" style="background: #3a585f">
+          &ldquo;TypeScript はマイクロソフトによって開発され、メンテナンスされているフリーでオープンソースのプログラミング言語である。
+          TypeScriptはJavaScriptに対して、省略も可能な静的型付けとクラスベースオブジェクト指向を加えた厳密なスーパーセットとなっている。&rdquo;
+        </blockquote>
+      </script>
+    </section>
+    <section data-markdown data-background="#FFFFFF" data-background-transition="none">
+      <script type="text/template">
+        ### <p style="color: #3a585f">何がどうサポートされたのか？</p>
+        ### <span class="fragment" style="color: #2896b8">公式の型の定義ファイルが入るようになった！</span>
+      </script>
+    </section>
+    <section data-markdown data-background="#FFFFFF" data-background-transition="none">
+      <script type="text/template">
+        ### <p style="color: #3a585f">今まで</p>
+        <oi>
+          <span class="fragment" style="color: #3a585f"><li>型定義ファイルを取ってくる準備をする</li></span>
+          <span class="fragment" style="color: #3a585f"><li>型定義ファイルが存在するかどうか探す</li></span>
+          <span class="fragment" style="color: #3a585f"><li>既にあれば使わせてもらう、なければ作る</li></span>
+        </oi>
+      </script>
+    </section>
+    <section data-markdown data-background="#FFFFFF" data-background-transition="none">
+      <script type="text/template">
+        ### <p style="color: #3a585f">これから</p>
+        <oi>
+          <span class="fragment" style="color: #3a585f"><li>無</li></span>
+        </oi>
+      </script>
+    </section>
+    <section data-markdown data-background="#FFFFFF" data-background-transition="none">
+      <script type="text/template">
+        ### <p style="color: #3a585f">とりあえず置いておきました</p>
+        <pre><code>
+          git clone https://github.com/changami/froghouse-lightning-talk-electron-typescript-support.git
+          cd froghouse-lightning-talk-electron-typescript-support
+          npm install && npm start
+
+        </code></pre>
+
+      </script>
+    </section>
+    <section data-markdown data-background="#2f3241" data-background-transition="none">
+      <script type="text/template">
+        <span style="color: #FFFFFF">ご清聴ありがとうございました！</span>
+        ### <span style="color: #74b1be">Let's enjoy Electron!</span>
+      </script>
+    </section>
+  </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+  Reveal.initialize({
+    history: true,
+    slideNumber: true,
+
+    configure: {
+      slideNumber: 'c/t'
+    },
+
+    dependencies: [
+      {src: 'plugin/markdown/marked.js'},
+      {src: 'plugin/markdown/markdown.js'},
+      {src: 'plugin/notes/notes.js', async: true},
+      {
+        src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+        hljs.initHighlightingOnLoad();
+      }
+      }
+    ]
+  });
+</script>
+</body>
+</html>
