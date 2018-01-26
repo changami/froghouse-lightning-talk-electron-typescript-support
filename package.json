@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/changami/froghouse-lightning-talk-electron-typescript-support#readme",
   "dependencies": {
-    "electron": "1.6.10",
+    "electron": "^1.7.11",
     "typescript": "^2.3.4"
   }
 }
